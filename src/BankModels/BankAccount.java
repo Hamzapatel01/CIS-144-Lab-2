@@ -5,14 +5,14 @@ public class BankAccount {
     private String name;
     private double balance;
     
-    public BankAccount(String name, double balance) {
-        this.name = name;
-        this.balance = balance;
-    }
-
     public BankAccount(String name) {
         this.name = name;
         this.balance = 0.0; 
+    }
+    
+    public BankAccount(String name, double balance) {
+        this.name = name;
+        this.balance = balance;
     }
 
     public void withdraw(double amount) {
@@ -40,6 +40,7 @@ public class BankAccount {
     public String getName(){
         return this.name;
     }
+    
     public double getBalance(){
         return this.balance;
     }
